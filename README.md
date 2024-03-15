@@ -21,5 +21,15 @@ Sau khi enter ‘y’ để xác nhận thì Splunk sẽ cho ta tạo credential
 Quá trình cài đặt hoàn tất.
 
 Start splunk và truy cập vào web interface.
+> /opt/splunk/bin/splunk start
+![image](https://github.com/thieptrans/Splunk/assets/118431215/c627737f-8dc4-4b91-8ea8-c1a26bca8795)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/2fc023b0-6218-40f7-854d-914213da804c)
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/b74db5ef-4357-4fa3-823d-c3e9a9a741ae)
+
+##Cài Agent lên Server chạy Splunk để lấy log
+Ở đây mình sử dụng phương pháp đẩy (Push) để lấy log từ Server.
+
+Sử dụng Elastic Cloud để monitor và cài Auditbeat lên server.
 
 
