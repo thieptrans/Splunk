@@ -7,4 +7,7 @@ Tải Splunk tại https://www.splunk.com/
 
 Sau khi đăng kí và nhập thông tin thì mình có đường link download https://www.splunk.com/en_us/download/splunk-enterprise/thank-you-enterprise.html
 
-Sau khi tải xong, cài các package bằng lệnh **apt install**. Splunk sẽ được cài vào thư mục **/opt/splunk**.
+Sau khi tải xong, cài các package bằng lệnh **apt install**.
+![image](https://github.com/thieptrans/Splunk/assets/118431215/13dcd6dc-f36d-41ba-998e-3e8ee524108f)
+
+Splunk sẽ được cài vào thư mục **/opt/splunk**.
