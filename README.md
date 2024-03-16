@@ -29,7 +29,7 @@ Start splunk và truy cập vào web interface.
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/b74db5ef-4357-4fa3-823d-c3e9a9a741ae)
 
-##Cài Agent lên Server chạy Splunk để lấy log
+## Cài Agent lên Server chạy Splunk để lấy log
 Ở đây mình sử dụng phương pháp đẩy (Push) để lấy log từ Server.
 
 Sử dụng Elastic Cloud để monitor và cài Auditbeat lên server.
