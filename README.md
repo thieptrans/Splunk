@@ -38,8 +38,11 @@ Download và install Auditbeat version lên server.
 Sau khi đăng ký elastic  bản dùng thử mk có được dòng lệnh để kết nối máy chủ với agent
 
 >$ProgressPreference = 'SilentlyContinue'
->Innvoke-WebRequest -Uri https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.12.2-windows-x86_64.zip -OutFile elastic-agent-8.12.2-windows-x86_64.zip
+>Invoke-WebRequest -Uri https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.12.2-windows-x86_64.zip -OutFile elastic-agent-8.12.2-windows-x86_64.zip
 >Expand-Archive .\elastic-agent-8.12.2-windows-x86_64.zip -DestinationPath .
 >cd elastic-agent-8.12.2-windows-x86_64
 >.\elastic-agent.exe install --url=https://0cd87c8752734b4bb579362e7d2881a3.fleet.us-central1.gcp.cloud.es.io:443 --enrollment-token=NWpPQ1JZNEJ3YUUxQm1lUENnajQ6UlhYQXFWOG5SOTZlelRYWThyVDZ3Zw==
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/40ea433b-6f6d-4dcc-9ff3-cb333248e6a2)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/e4fdbace-d7cf-45ec-ac4c-aa70d27eb683)
 
