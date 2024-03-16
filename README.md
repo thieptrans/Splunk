@@ -54,3 +54,12 @@ Khởi động lại dịch vụ và mở port 443 truy cập qua https
 ### Cấu hình trên máy chủ Splunk server
 Tạo 2 index để nhận log đẩy về từ windows và linux
 > Settings --> indexes --> New index
+![image](https://github.com/thieptrans/Splunk/assets/118431215/537423c2-cbd9-46a3-979f-09d4f0005395)
+
+Cấu hình mở **port 9998** để nhận log
+
+Cấu hình tại Forwarding and receiving --> Recieve data
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/561de28f-1ef1-402f-977f-e6ea25e60963)
+
+
