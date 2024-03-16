@@ -43,6 +43,14 @@ Sau khi đăng ký elastic  bản dùng thử mk có được dòng lệnh để
 >cd elastic-agent-8.12.2-windows-x86_64
 >.\elastic-agent.exe install --url=https://0cd87c8752734b4bb579362e7d2881a3.fleet.us-central1.gcp.cloud.es.io:443 --enrollment-token=NWpPQ1JZNEJ3YUUxQm1lUENnajQ6UlhYQXFWOG5SOTZlelRYWThyVDZ3Zw== -->
 
+### Cấu hình truy cập Splunk qua https
 
+Sau khi đăng nhập được vào thì chọn Settings --> System --> Server settings --> General Settings
 
+![image](https://github.com/thieptrans/Splunk/assets/118431215/1980eb41-415d-45cd-8ed2-359de6297bb3)
 
+Khởi động lại dịch vụ và mở port 443 truy cập qua https
+
+### Cấu hình trên máy chủ Splunk server
+Tạo 2 index để nhận log đẩy về từ windows và linux
+> Settings --> indexes --> New index
