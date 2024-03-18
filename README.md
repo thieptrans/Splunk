@@ -60,6 +60,28 @@ Cấu hình mở **port 9998** để nhận log
 
 Cấu hình tại Forwarding and receiving --> Recieve data
 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/561de28f-1ef1-402f-977f-e6ea25e60963)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/925bfbbe-c79c-431d-871a-af01950b2102)
 
+### Đẩy Log từ windows về
 
+Bật Success/Failure audit log tại Administrator Tools → Local security policy → Local Policy → Audit Policy
+
+Chỉnh sửa các chính sách sau: 
+ - Audit account logon events
+ - Audit account management
+ - Audit logon events
+ - Audit Policy change
+ - Audit Privilege use
+ - Audit system event
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/34377ebd-3b85-4399-a390-f9ebd9ebf976)
+
+Tải Splunk về cho windows: https://www.splunk.com/en_us/download/splunk-enterprise/thank-you-enterprise.html
+![image](https://github.com/thieptrans/Splunk/assets/118431215/e4612247-e6b8-49b0-9b8d-b4e6a2dcbbd3)
+
+--> Customize Options
+![image](https://github.com/thieptrans/Splunk/assets/118431215/5be9dd5f-d701-4b49-a40b-c5009f0b6678)
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/f92c99b9-54d4-4dfa-9840-d8ff6a381d25)
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/729d0818-583f-437c-aeb4-03207543e898)
