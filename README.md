@@ -76,12 +76,29 @@ Chỉnh sửa các chính sách sau:
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/34377ebd-3b85-4399-a390-f9ebd9ebf976)
 
-Tải Splunk về cho windows: https://www.splunk.com/en_us/download/splunk-enterprise/thank-you-enterprise.html
-![image](https://github.com/thieptrans/Splunk/assets/118431215/e4612247-e6b8-49b0-9b8d-b4e6a2dcbbd3)
+Tải Splunk về cho windows: 
+https://www.splunk.com/en_us/download/universal-forwarder.html
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/fb8ecfcd-6bf3-473d-a6d0-41710530b270)
 
 --> Customize Options
-![image](https://github.com/thieptrans/Splunk/assets/118431215/5be9dd5f-d701-4b49-a40b-c5009f0b6678)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/8e6a4723-c6b6-46d3-872e-d98bd576b4df)
 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/f92c99b9-54d4-4dfa-9840-d8ff6a381d25)
+--> next 
+![image](https://github.com/thieptrans/Splunk/assets/118431215/b5ddef35-fcb8-481f-8baf-e8e80f919364)
 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/729d0818-583f-437c-aeb4-03207543e898)
+Cài đặt ssl, nếu có Browse đến đường dẫn chứa tập tin public và private, sau đó nhập password và Browse đường dẫn SSL root CA. Nếu không sử dụng tính năng này có thể Next sang bước tiếp theo
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/68550be4-7c96-4d08-942f-b2d9dfa1a68d)
+--> next
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/de2b99d0-9448-4e9c-81c4-426a8120b3fe)
+
+Tích chọn các log cần đẩy về để giám sát, nếu muốn giám sát 1 tập tin ứng dụng bất kì thì chọn File --> browse
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/567949e0-a4f7-4738-bf31-ef799efef399)
+
+Nhập tài khoản và mật khẩu cho app
+
+--> next 
+![image](https://github.com/thieptrans/Splunk/assets/118431215/bc9a19b9-ac57-4238-a134-e646ee9d8bf5)
