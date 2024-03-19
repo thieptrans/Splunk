@@ -7,6 +7,7 @@ Tải Splunk tại https://www.splunk.com/
 
 Sau khi đăng kí và nhập thông tin thì mình có đường link 
 >wget -O splunk-9.2.0.1-d8ae995bf219-linux-2.6-amd64.deb "https://download.splunk.com/products/splunk/releases/9.2.0.1/linux/splunk-9.2.0.1-d8ae995bf219-linux-2.6-amd64.deb"
+
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/bdf0ff74-16a0-4a42-ba80-7bc3c7509d92)
 
 Sau khi tải xong, cài các package bằng lệnh **apt install**.
@@ -15,7 +16,8 @@ Sau khi tải xong, cài các package bằng lệnh **apt install**.
 Splunk sẽ được cài vào thư mục **/opt/splunk**.
 
 Chạy lệnh sau để accept license
->/opt/splunk/bin/splunk start—accept-license 
+>/opt/splunk/bin/splunk start—accept-license
+
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/105a25c4-06ac-4fd9-bae1-6b60c8ec87bf)
 
 Sau khi enter ‘y’ để xác nhận thì Splunk sẽ cho ta tạo credentials cho admin account.
@@ -24,6 +26,7 @@ Quá trình cài đặt hoàn tất.
 
 Start splunk và truy cập vào web interface.
 > /opt/splunk/bin/splunk start
+
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/c627737f-8dc4-4b91-8ea8-c1a26bca8795)
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/2fc023b0-6218-40f7-854d-914213da804c)
 
@@ -101,4 +104,21 @@ Tích chọn các log cần đẩy về để giám sát, nếu muốn giám sá
 Nhập tài khoản và mật khẩu cho app
 
 --> next 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/bc9a19b9-ac57-4238-a134-e646ee9d8bf5)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/6ab36fd5-36f1-48bf-b923-de0cc74dc8ca)
+
+Nhập ip server và port nhận log từ client đẩy về.
+![image](https://github.com/thieptrans/Splunk/assets/118431215/3202964d-beaa-453e-865b-e3b9fd0ff362)
+--> install
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/8603212b-cac6-459c-9149-39c37c7e2862)
+Quá trình cài đặt hoàn tất.
+Restart service splunk trên power shell
+> PS C:\Program Files\SplunkUniversalForwarder\bin> .\splunk.exe restart
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/ce29e1e0-777d-45e4-9fe8-ed5d6bf50105)
+
+Thay đổi cấu hình log đẩy về chỉnh sửa tại path C:\Program Files\SplunkUniversalForwarder\etc\apps\SplunkUniversalForwarder\localinputs.conf
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/d10f411a-db15-4b4a-aa68-0487b8bf5da7)
+
+Restart lại splunk sau khi thay đổi cấu hình.
