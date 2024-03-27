@@ -16,7 +16,7 @@ Sau khi tải xong, cài các package bằng lệnh **apt install**.
 Splunk sẽ được cài vào thư mục **/opt/splunk**.
 
 Chạy lệnh sau để accept license
->/opt/splunk/bin/splunk start—accept-license
+>/opt/splunk/bin/splunk start --accept-license
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/105a25c4-06ac-4fd9-bae1-6b60c8ec87bf)
 
