@@ -109,6 +109,8 @@ Restart service splunk trên power shell
 
 Thay đổi cấu hình log đẩy về chỉnh sửa tại path C:\Program Files\SplunkUniversalForwarder\etc\apps\SplunkUniversalForwarder\localinputs.conf
 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/d10f411a-db15-4b4a-aa68-0487b8bf5da7)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/82f26348-a5c8-4321-9bfc-22a2f214612c)
+
+Thêm dòng index = <tên index> vào dưới mỗi luồng
 
 Restart lại splunk sau khi thay đổi cấu hình.
