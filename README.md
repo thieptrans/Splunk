@@ -18,10 +18,11 @@ Splunk sẽ được cài vào thư mục **/opt/splunk**.
 Chạy lệnh sau để accept license
 >/opt/splunk/bin/splunk start --accept-license
 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/105a25c4-06ac-4fd9-bae1-6b60c8ec87bf)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/fa7edf21-0b87-458a-b4d5-d67170875b53)
 
 Sau khi enter ‘y’ để xác nhận thì Splunk sẽ cho ta tạo credentials cho admin account.
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/219c9393-6ab7-4785-82f3-beb795df8b4f)
+
 Quá trình cài đặt hoàn tất.
 
 Start splunk và truy cập vào web interface.
@@ -32,19 +33,8 @@ Start splunk và truy cập vào web interface.
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/b74db5ef-4357-4fa3-823d-c3e9a9a741ae)
 
-## Cài Agent lên Server chạy Splunk để lấy log
+## Cài Agent lên Windows server rồi đẩy log về Splunk
 Ở đây mình sử dụng phương pháp đẩy (Push) để lấy log từ Server.
-
-<!-- Sử dụng Elastic Cloud để monitor và cài Auditbeat lên server.
-
-Download và install Auditbeat version lên server.
-Sau khi đăng ký elastic  bản dùng thử mk có được dòng lệnh để kết nối máy chủ với agent
-
->$ProgressPreference = 'SilentlyContinue'
->Invoke-WebRequest -Uri https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.12.2-windows-x86_64.zip -OutFile elastic-agent-8.12.2-windows-x86_64.zip
->Expand-Archive .\elastic-agent-8.12.2-windows-x86_64.zip -DestinationPath .
->cd elastic-agent-8.12.2-windows-x86_64
->.\elastic-agent.exe install --url=https://0cd87c8752734b4bb579362e7d2881a3.fleet.us-central1.gcp.cloud.es.io:443 --enrollment-token=NWpPQ1JZNEJ3YUUxQm1lUENnajQ6UlhYQXFWOG5SOTZlelRYWThyVDZ3Zw== -->
 
 ### Cấu hình truy cập Splunk qua https
 
