@@ -114,3 +114,15 @@ Thay đổi cấu hình log đẩy về chỉnh sửa tại path C:\Program File
 Thêm dòng index = <tên index> vào dưới mỗi luồng
 
 Restart lại splunk sau khi thay đổi cấu hình.
+
+Trên splunk server, Chọn Setting --> Data inputs --> Forwarded input --> Windows Event Log
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/d4e55016-b78f-4cb9-b8b1-f647e2f11d2f)
+
+Chọn tên máy thực hiện chuyển tiếp tại mục available host và nhập tên vào class name --> next
+Bước tiếp theo chọn các mục đã tích khi cài universal Forwarder, mục index nhấp chọn index vừa tạo tại indexes, ở đây của mình là windows_server.
+
+Trở về trang chủ splunk server --> search and reporting
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/ae0a64b1-eff6-4bfb-b1d4-a6fc4e71f5b8)
+
