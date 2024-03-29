@@ -107,9 +107,10 @@ Nhập ip server và port nhận log từ client đẩy về.
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/f83d9108-3192-4b23-baea-8552d4f46ea1)
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/3202964d-beaa-453e-865b-e3b9fd0ff362)
---> install
+--> Install
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/8603212b-cac6-459c-9149-39c37c7e2862)
+
 Quá trình cài đặt hoàn tất.
 
 Thay đổi cấu hình log đẩy về chỉnh sửa tại path C:\Program Files\SplunkUniversalForwarder\etc\apps\SplunkUniversalForwarder\localinputs.conf
