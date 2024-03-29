@@ -47,13 +47,14 @@ Khởi động lại dịch vụ và mở port 443 truy cập qua https
 ### Cấu hình trên máy chủ Splunk server
 Tạo 2 index để nhận log đẩy về từ windows và linux
 > Settings --> indexes --> New index
-![image](https://github.com/thieptrans/Splunk/assets/118431215/537423c2-cbd9-46a3-979f-09d4f0005395)
 
-Cấu hình mở **port 9998** để nhận log
+![image](https://github.com/thieptrans/Splunk/assets/118431215/62661ba6-4b16-4af3-89f5-5b6997e305e0)
 
-Cấu hình tại Forwarding and receiving --> Recieve data
+Cấu hình mở **port 9997** để nhận log
 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/925bfbbe-c79c-431d-871a-af01950b2102)
+Setting --> Forwarding and receiving --> Recieve data
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/4f1cf5eb-4b85-458f-802b-24f86520daed)
 
 ### Đẩy Log từ windows về
 
@@ -69,12 +70,14 @@ Chỉnh sửa các chính sách sau:
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/34377ebd-3b85-4399-a390-f9ebd9ebf976)
 
-Tải Splunk về cho windows: 
+Tải Universal Forwarder về cho windows: 
 https://www.splunk.com/en_us/download/universal-forwarder.html
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/fb8ecfcd-6bf3-473d-a6d0-41710530b270)
 
+--> Check thi box to accept the License Agreement
 --> Customize Options
+
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/8e6a4723-c6b6-46d3-872e-d98bd576b4df)
 
 --> next 
@@ -85,33 +88,39 @@ Cài đặt ssl, nếu có Browse đến đường dẫn chứa tập tin public
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/68550be4-7c96-4d08-942f-b2d9dfa1a68d)
 --> next
 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/de2b99d0-9448-4e9c-81c4-426a8120b3fe)
+![image](https://github.com/thieptrans/Splunk/assets/118431215/0f66ba3c-c796-439d-a567-df742a60e8f4)
 
-Tích chọn các log cần đẩy về để giám sát, nếu muốn giám sát 1 tập tin ứng dụng bất kì thì chọn File --> browse
+Tích chọn các log cần đẩy về để giám sát
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/567949e0-a4f7-4738-bf31-ef799efef399)
 
 Nhập tài khoản và mật khẩu cho app
 
 --> next 
-![image](https://github.com/thieptrans/Splunk/assets/118431215/6ab36fd5-36f1-48bf-b923-de0cc74dc8ca)
+
+Nhập ip Splunk Server và port mặc định sử dụng là 8089
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/eca9a3b3-ea61-4476-80dc-e498d0e5bb04)
 
 Nhập ip server và port nhận log từ client đẩy về.
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/f83d9108-3192-4b23-baea-8552d4f46ea1)
+
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/3202964d-beaa-453e-865b-e3b9fd0ff362)
 --> install
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/8603212b-cac6-459c-9149-39c37c7e2862)
 Quá trình cài đặt hoàn tất.
-Restart service splunk trên power shell
-> PS C:\Program Files\SplunkUniversalForwarder\bin> .\splunk.exe restart
-
-![image](https://github.com/thieptrans/Splunk/assets/118431215/ce29e1e0-777d-45e4-9fe8-ed5d6bf50105)
 
 Thay đổi cấu hình log đẩy về chỉnh sửa tại path C:\Program Files\SplunkUniversalForwarder\etc\apps\SplunkUniversalForwarder\localinputs.conf
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/82f26348-a5c8-4321-9bfc-22a2f214612c)
 
 Thêm dòng index = <tên index> vào dưới mỗi luồng
+
+Bật cửa sổ service và restart lại Splunk Forwarder
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/4740c746-39dd-4db2-9759-5221b7ba0d4f)
 
 Restart lại splunk sau khi thay đổi cấu hình.
 
