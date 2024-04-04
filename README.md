@@ -136,3 +136,15 @@ Trở về trang chủ splunk server --> search and reporting
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/ae0a64b1-eff6-4bfb-b1d4-a6fc4e71f5b8)
 
+## Cài đặt agent lên ubuntu
+Đăng nhập vào tài khoản root và tạo user mới là splunkfwd và thêm vào group splunkfwd
+
+
+Tải splunk universal forwarder về từ link 
+
+>wget -O splunkforwarder-9.2.1-78803f08aabb-linux-2.6-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/9.2.1/linux/splunkforwarder-9.2.1-78803f08aabb-linux-2.6-amd64.deb"
+
+Cài đặt splunk bằng lệnh
+
+>apt install ./splunkforwarder-9.2.1-78803f08aabb-linux-2.6-amd64.deb
+
