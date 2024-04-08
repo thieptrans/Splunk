@@ -143,6 +143,7 @@ Trở về trang chủ splunk server --> search and reporting
 Tạo thư mục chứa Splunk
 
 >export SPLUNK_HOME="/opt/splunkforwarder"
+
 >mkdir $SPLUNK_HOME
 
 Tải splunk universal forwarder về từ link 
