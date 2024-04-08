@@ -164,3 +164,12 @@ Nhập thông tin tài khoản mật khẩu
 
 ==> Quá trình cài đặt hoàn tất.
 ### Cấu hình file universal forwarder
+Di chuyển tới thư mục **$SPLUNK_HOME/etc/system/local**
+
+Cấu hình file input.conf
+>nano input.conf
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/8432b45c-5552-4ac0-a8a5-66c1c9ca4c5f)
+
+
+
