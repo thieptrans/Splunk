@@ -138,7 +138,7 @@ Trở về trang chủ splunk server --> search and reporting
 
 ## Cài đặt agent lên ubuntu
 ### Cài đặt splunk forwarder trên máy ubuntu
-Đăng nhập vào tài khoản root
+// Đăng nhập vào tài khoản root
 
 Tải splunk universal forwarder về từ link 
 
