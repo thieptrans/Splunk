@@ -135,8 +135,8 @@ Bước tiếp theo chọn các mục đã tích khi cài universal Forwarder, m
 Trở về trang chủ splunk server --> search and reporting
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/ae0a64b1-eff6-4bfb-b1d4-a6fc4e71f5b8)
-<--!
-## Cài đặt agent lên ubuntu
+
+<!-- ## Cài đặt agent lên ubuntu
 ### Cài đặt splunk forwarder trên máy ubuntu
 Đăng nhập vào tài khoản root
 
