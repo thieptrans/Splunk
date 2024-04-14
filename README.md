@@ -136,7 +136,7 @@ Trở về trang chủ splunk server --> search and reporting
 
 ![image](https://github.com/thieptrans/Splunk/assets/118431215/ae0a64b1-eff6-4bfb-b1d4-a6fc4e71f5b8)
 
-<!-- ## Cài đặt agent lên ubuntu
+## Cài đặt agent lên ubuntu
 ### Cài đặt splunk forwarder trên máy ubuntu
 Đăng nhập vào tài khoản root
 
@@ -144,11 +144,12 @@ Tải splunk universal forwarder về từ link
 
 >wget -O splunkforwarder-9.2.1-78803f08aabb-linux-2.6-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/9.2.1/linux/splunkforwarder-9.2.1-78803f08aabb-linux-2.6-amd64.deb"
 
-Cài đặt splunk bằng lệnh
+Giải nén splunk bằng lệnh
 
 >dpkg -i splunkforwarder-9.2.1-78803f08aabb-linux-2.6-amd64.deb 
 
-Khởi chạy 
+Cài đặt
+
 >/opt/splunkforwarder/bin/splunk start --accept-license
 
 Nhập thông tin tài khoản mật khẩu
@@ -163,5 +164,37 @@ Chuyển tiếp về splunk
 Cấu hình đẩy log  về splunk 
 >/opt/splunkforwarder/bin/splunk add monitor /var/log
 
--->
 
+<!--
+## Cài đặt Agent lên CentOs 7 đẩy log về Splunk
+### Tạo index mới và mở port 9998 cho splunk
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/a1029703-bb01-4f59-9076-6dc09c5d67b8)
+
+
+### Tải và cài đặt agent
+
+Tải splunk universal forwarder
+
+>wget -O splunkforwarder-9.2.1-78803f08aabb.x86_64.rpm "https://download.splunk.com/products/universalforwarder/releases/9.2.1/linux/splunkforwarder-9.2.1-78803f08aabb.x86_64.rpm"
+
+Giải nén
+
+> rpm -i splunkforwarder-9.2.1-78803f08aabb.x86_64.rpm
+
+Cài đặt
+
+>/opt/splunkforwarder/bin/splunk start --accept-license
+
+Nhập tài khoản và mật khẩu mới cho universal fwd
+
+Chuyển tiếp về splunk
+>/opt/splunkforwarder/bin/splunk add forward-server 192.168.173.136:9998
+
+==> Quá trình cài đặt hoàn tất.
+### Cấu hình file universal forwarder
+
+Cấu hình đẩy log  về splunk 
+>/opt/splunkforwarder/bin/splunk add monitor /var/log
+
+-->
