@@ -153,7 +153,8 @@ Cài đặt
 >/opt/splunkforwarder/bin/splunk start --accept-license
 
 Nhập thông tin tài khoản mật khẩu
-![image](https://github.com/thieptrans/Splunk/assets/118431215/b26c5403-1e93-434e-b53a-f20946cf6257)
+
+![image](https://github.com/thieptrans/Splunk/assets/118431215/cb21c5b2-813f-4c95-8ed9-0c301b4883d9)
 
 Chuyển tiếp về splunk
 >/opt/splunkforwarder/bin/splunk add forward-server 192.168.173.136:9998
